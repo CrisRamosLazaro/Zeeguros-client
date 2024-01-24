@@ -1,0 +1,203 @@
+.login-title-light {
+    text-align: left !important;
+    font-weight: bolder;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+    color: #252525 !important
+}
+
+.login-title-dark {
+    text-align: left !important;
+    font-weight: bolder;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+    color: #fff
+}
+
+.signup-footer-light {
+    width: 100%;
+    text-align: center;
+    color: rgb(113, 113, 113);
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+.signup-footer-dark {
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+.login-link-light {
+    text-decoration: none;
+    color: #07b491;
+}
+
+.login-link-light:hover {
+    color: #00372c !important;
+    transition: all 0.3s ease;
+}
+
+.login-link-dark {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.login-link-dark:hover {
+    color: #00372c !important;
+    transition: all 0.2s ease;
+}
+
+.d-grid {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.custom-button {
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    margin-right: 0 !important;
+    margin-top: 25px !important;
+    width: 150px !important
+}
+
+.light {
+    --button-gradient: linear-gradient(to right, #00372c, #07b491);
+    --font-color: #fff;
+    background: var(--button-gradient);
+    color: var(--font-color);
+}
+
+.dark {
+    --button-gradient: linear-gradient(to right, #bbfff1, #fff);
+    --font-color: #07b491;
+    background: var(--button-gradient);
+    color: var(--font-color);
+}
+
+.custom-button:hover {
+    --button-gradient: linear-gradient(to right, #d07200, #ffbf58);
+}
+
+.light:hover {
+    --button-gradient: linear-gradient(to right, #260037,
+            #6907b4);
+}
+
+.dark:hover {
+    --button-gradient: linear-gradient(to right, #7cffe5, #fff);
+    --font-color: #00372c;
+    color: var(--font-color);
+}
+
+.transparent-input-light {
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+.transparent-input-dark {
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.24);
+    outline: none;
+}
+
+.name-input-light {
+    background-image: url('../../assets/images/person-login.png');
+    background-size: 15px 15px;
+    background-position: 7.5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+.name-input-dark {
+    background-image: url('../../assets/images/person-login-darkmode.png');
+    background-size: 15px 15px;
+    background-position: 7.5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+.transparent-input-dark:focus,
+.email-input-dark:focus,
+.password-input-dark:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.24) !important;
+    background-color: #494949;
+    outline: none !important;
+}
+
+.transparent-input-dark:active,
+.email-input-dark:active,
+.password-input-dark:active {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.24) !important;
+    background-color: #494949;
+    color: #e9e1e1 !important;
+    outline: none !important;
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+.username-input-light::placeholder,
+.name-input-light::placeholder,
+.email-input-light::placeholder,
+.password-input-light::placeholder,
+.avatar-input-light {
+    color: grey;
+    font-size: 0.8em;
+    /* adjust as needed */
+    opacity: 1;
+    /* Firefox */
+}
+
+.username-input-dark::placeholder,
+.name-input-dark::placeholder,
+.email-input-dark::placeholder,
+.password-input-dark::placeholder,
+.avatar-input-dark {
+    color: #e9e1e1;
+    font-size: 0.8em;
+    /* adjust as needed */
+    opacity: 1;
+    /* Firefox */
+}
+
+/* Internet Explorer 10-11 */
+.username-input-light::placeholder,
+.name-input-light::placeholder,
+.email-input-light:-ms-input-placeholder,
+.password-input-light:-ms-input-placeholder {
+    color: grey;
+    font-size: 0.8em;
+}
+
+.username-input-dark::placeholder,
+.name-input-dark::placeholder,
+.email-input-dark:-ms-input-placeholder,
+.password-input-dark:-ms-input-placeholder {
+    color: #e9e1e1;
+    font-size: 0.8em;
+}
+
+/* Microsoft Edge */
+.username-input-light::placeholder,
+.name-input-light::placeholder,
+.email-input-light::-ms-input-placeholder,
+.password-input-light::-ms-input-placeholder {
+    color: grey;
+    font-size: 0.8em;
+}
+
+.username-input-dark::placeholder,
+.name-input-dark::placeholder,
+.email-input-dark::-ms-input-placeholder,
+.password-input-dark::-ms-input-placeholder {
+    color: #e9e1e1;
+    font-size: 0.8em;
+}

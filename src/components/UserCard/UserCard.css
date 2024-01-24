@@ -1,0 +1,12 @@
+.UserCard {
+    width: 300px;
+}
+
+.UserCardImage {
+    object-fit: cover;
+    height: 200px;
+}
+
+.btn {
+    width: 100%;
+}
