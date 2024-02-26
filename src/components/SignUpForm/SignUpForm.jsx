@@ -1,8 +1,8 @@
 import { useState, useContext } from "react"
 import { ThemeContext } from '../../contexts/theme.context'
 import { Form, Button, Container } from "react-bootstrap"
-import authService from './../../services/auth.services'
 import { useNavigate } from "react-router-dom"
+import authService from './../../services/auth.services'
 import uploadServices from "../../services/upload.services"
 import '../SignUpForm/SignUpForm.css'
 
@@ -31,8 +31,6 @@ const SignUpForm = () => {
     const handleNewUserSubmit = e => {
         e.preventDefault()
 
-        console.log("Submit button clicked", signUpData);
-
         authService
             .signup(signUpData)
             .then(() => navigate('/login'))
@@ -47,7 +45,7 @@ const SignUpForm = () => {
         formData.append('imageData', e.target.files[0])
 
         uploadServices
-            .uploadimage(formData)
+            .uploadImage(formData)
             .then(res => {
                 setSignUpData({ ...signUpData, avatar: res.data.cloudinary_url })
                 setLoadingImage(false)

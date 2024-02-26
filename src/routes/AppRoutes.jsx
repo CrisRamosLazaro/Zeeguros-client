@@ -8,6 +8,8 @@ import UserEdit from '../pages/UserEdit/UserEdit'
 import ProfilePage from '../pages/ProfilePage/ProfilePage'
 import OwnUserPage from '../pages/OwnUserPage/OwnUserPage'
 import HomePage from '../pages/HomePage/HomePage'
+import PolicyUploaderPage from '../pages/PolicyUploaderPage/PolicyUploaderPage'
+import SelectBrokerPage from '../pages/SelectBrokerPage/SelectBrokerPage'
 
 const AppRoutes = () => {
     return (
@@ -28,6 +30,8 @@ const AppRoutes = () => {
             </Route>
 
             <Route element={<PrivateRoute admittedRoles={['ADMIN', 'USER']} />}>
+                <Route path="/upload-policy" element={<PolicyUploaderPage />} />
+                <Route path="/select-broker" element={<SelectBrokerPage />} />
 
             </Route>
 
